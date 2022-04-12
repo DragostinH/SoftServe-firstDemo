@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <script src="./app.js" defer></script>
+
+    <title>Menu</title>
+</head>
+
+<body>
+    <main class="page-container">
+        <!-- TOP HEADER SECTION -->
+        <header>
+            <div class="logo-container">
+                <a href="../../dist/index.html" class="logo-link">
+                    <img src="../img/logo.png" class="logo-img" alt="best company logo ever">
+                </a>
+            </div>
+            <nav class="top-right-nav">
+                <ul class="nav-list">
+                    <li class="dropdown-li">
+                        <a class="menu-btn" href="#">MENU</a>
+                        <div class="dropdown-content">
+                            <div class="entree dropdown">
+                                <a class="entree-title" href="../Menu/menu.html">Entrée</a>
+                                <a href="../Menu/menu.html">Main dishes</a>
+                                <a href="../Menu/rice.html">Rice</a>
+                                <a href="../Menu/salads.html">Salads</a>
+                                <a href="../Menu/fish.html">Fish</a>
+                            </div>
+                            <div class="sushi dropdown">
+                                <a class="sushi-title" href="../Menu/sushi.html">Sushi</a>
+                                <a href="../Menu/sushi.html">Combo</a>
+                                <a href="../Menu/nagiri.html">Nagiri</a>
+                                <a href="../Menu/sashimi.html">Sashimi</a>
+
+                            </div>
+                            <div class="drinks dropdown">
+                                <a class="drinks-title" href="../Menu/drinks.html">Drinks</a>
+                                <a href="../Menu/drinks.html">Sodas</a>
+                                <a href="../Menu/beers.html">Beers</a>
+                                <a href="../Menu/wines.html">Wines</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a id="order-btn" href="#">ORDER</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- shopping cart -->
+        <section class="shopping-cart-container">
+            <div class="shopping-cart-btn show">
+                <img class="shopping-cart-icon" src="./img/shopping-cart-icon.png" alt="shopping cart icon">
+                <p class="cart-total">0.00lv</p>
+            </div>
+
+            <div class="shopping-cart-view hidden">
+                <div class="title-container">
+                    <img class="hide-shopping-cart-icon" src="./img/hide-shopping-cart-icon.png" alt="">
+                    <p class="cart-title">SHOPPING BASKET</p>
+                    <img src="./img/shopping-cart-icon.png" alt="">
+                </div>
+                <div class="item-list-container">
+                    <p>aki</p>
+                    <p>aki</p>
+                    <p>aki</p>
+                    <p>aki</p>
+                    <p>aki</p>
+                    <p>aki</p>
+                    <p>aki</p>
+                    <p>aki</p>
+                    <p>aki</p>
+                    <p>aki</p>
+                    <p>aki</p>
+                </div>
+                <div class="total-value-container">
+
+                </div>
+                <div class="order-btn-container">
+                    <button class="order-btn">ORDER</button>
+                </div>
+            </div>
+        </section>
+        <!-- Mid section -->
+
+        <section class="menu-spread-container">
+            <nav class="bottom-nav-menu-spread">
+                <ul class="menu-spread-ul">
+                    <li><a class="" href="../Menu/menu.html">Entrée</a></li>
+                    <li class="menu-filter li-active"><a href="../Menu/sushi.html">SUSHI</a></li>
+                    <li><a href="../Menu/drinks.html">DRINKS</a></li>
+                </ul>
+                <ul class="meals-ul">
+                    <li><a href="../Menu/sushi.html" class="">COMBO</a></li>
+                    <li><a href="../Menu/nagiri.html" class="">NAGIRI</a></li>
+                    <li class="li-active"><a href="../Menu/sashimi.html" class="">SASHIMI</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Bottom footer section -->
+        <footer>
+            <article class="contact-info-container">
+                <p class="contact-p">Contacts</p>
+                <p class="address-p">Somewhere Street, Postcode, Nowhereland</p>
+                <p class="tel-orders">Reservations and orders: <span class="tel-span">420696969</span></p>
+                <p class="email-p">E-mail HQ: <span class="hq-span">info@expensiverestaurant.lmao</span></p>
+                <p class="email-reservations">Email for reservations: <span
+                        class="reservation-span">whoareyoukidding@expensiverestaurant.lmao</span></p>
+            </article>
+
+            <article class="social-media-links">
+                <ul class="social-media-list">
+                    <li>
+                        <a href="#">
+                            <img src="../img/socialMediaIcons/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/socialMediaIcons/instagram.icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/socialMediaIcons/tripadvisor-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <img src="../img/logo.png" alt="" class="footer-logo">
+        </footer>
+</body>
+
+</html>

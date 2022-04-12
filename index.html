@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Scripts -->
+    <!-- <script src="./main.js" defer></script> -->
+    <script type="module" src="./scripts/index.js" defer></script>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Restaurant Demo</title>
+</head>
+
+<body>
+
+    <main class="page-container">
+        <!-- TOP HEADER SECTION -->
+        <header>
+            <div class="logo-container">
+                <a href="#" class="logo-link">
+                    <img src="./img/logo.png" class="logo-img" alt="best company logo ever">
+                </a>
+            </div>
+            <nav class="top-right-nav">
+
+                <ul class="nav-list">
+                    <li class="dropdown-li menu">
+                        <a class="menu-btn" href="#">MENU</a>
+                        <div class="dropdown-content">
+                            <div class="entree dropdown">
+                                <a class="entree-title" href="../src/Menu/menu.html">Entrée</a>
+                                <a href="../src/Menu/menu.html">Main dishes</a>
+                                <a href="../src/Menu/rice.html">Rice</a>
+                                <a href="../src/Menu/salads.html">Salads</a>
+                                <a href="../src/Menu/fish.html">Fish</a>
+                            </div>
+                            <div class="sushi dropdown">
+                                <a class="sushi-title" href="../src/Menu/sushi.html">Sushi</a>
+                                <a href="../src/Menu/sushi.html">Combo</a>
+                                <a href="../">Nagiri</a>
+                                <a href="#">Sashimi</a>
+
+                            </div>
+                            <div class="drinks dropdown">
+                                <a class="drinks-title" href="#">Drinks</a>
+                                <a href="#">Sodas</a>
+                                <a href="#">Beers</a>
+                                <a href="#">Wines</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a id="order-btn" href="#">ORDER</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <!-- MID SECTION WITH 3 MENU LINKS -->
+        <section class="mid-section">
+            <article class="food-links-container">
+                <div class="food-links entree-link">
+                    <p class="entree-p">
+                        Entrée
+                    </p>
+                    <a href=""><img src="./img/entree.jpg" alt="entree picture"></a>
+                </div>
+                <div class="food-links sushi-link">
+                    <p class="sushi-p">Sushi
+                    </p>
+                    <a href="#"><img src="./img/sushi.jpg" alt=""></a>
+                </div>
+                <div class="food-links drinks-link">
+                    <p class="drink-p">Drinks</p>
+                    <a href=""><img src="./img/drinks.jpg" alt="drinks link"></a>
+                </div>
+            </article>
+        </section>
+
+        <!-- QUOTE SECTION -->
+        <section class="quote-container">
+            <p class="flower-p">
+                <img src="./img/quote-flower.png" alt="flower icon">
+                <img src="./img/quote-flower.png" alt="flower icon">
+                <img src="./img/quote-flower.png" alt="flower icon">
+            </p>
+
+            <figure class="quote-fig">
+                <blockquote class="blockquote">
+                    <p class="quote-p">
+                        If you pay us money for our overpriced food, good fortune will come. This is a very genuine
+                        quote so you gotta trust it, bro.
+                    </p>
+                </blockquote>
+                <figcaption>-Not the restaurant owner.</figcaption>
+            </figure>
+
+            <a href=""><button class="quote-btn">MORE</button></a>
+        </section>
+
+        <!-- LOWER SECTION GALLERY -->
+        <!-- GALLERY SLIDER -->
+
+        <section class="gallery-section">
+            <h2>GALLERY</h2>
+
+            <article class="image-slider-container hidden">
+                <div class="btn-container">
+                    <button class="left-img">Left</button>
+                    <button class="right-img">Right</button>
+                </div>
+                <div class="img-gallery-container">
+
+                    <div class="slide">
+                        <img class="img-1" src="./img/gallery/1.jpg" alt="salmon entree">
+                    </div>
+
+                    <div class="slide">
+                        <img class="img-2" src="./img/gallery/2.jpg" alt="boiled egg sandwich">
+                    </div>
+
+                    <div class="slide">
+                        <img class="img-3" src="./img/gallery/3.jpg" alt="chef finishing entrees">
+                    </div>
+                    <div class="slide">
+                        <img class="img-4" src="./img/gallery/4.jpg" alt="strawberry ice-cream">
+                    </div>
+                    <div class="slide">
+                        <img class="img-5" src="./img/gallery/5.jpg" alt="ramen without the soup">
+                    </div>
+                    <div class="slide">
+                        <img class="img-6" src="./img/gallery/6.jpg" alt="21 sushi bites">
+                    </div>
+                    <div class="slide">
+                        <img class="img-7" src="./img/gallery/7.jpg" alt="salmon and rice sushi">
+                    </div>
+                    <div class="slide">
+                        <img class="img-8" src="./img/gallery/8.jpg" alt="sushi bite in soy sauce">
+                    </div>
+                    <div class="slide">
+                        <img class="img-9" src="./img/gallery/9.jpg" alt="close up of a sushi bite">
+                    </div>
+
+
+                </div>
+            </article>
+
+            <!-- All gallery images in 3x3 grid -->
+            <div class="gallery-container">
+                <article class="gallery-article">
+                    <img src="./img/gallery/1.jpg" alt="salmon entree">
+                    <img src="./img/gallery/2.jpg" alt="boiled egg sandwich">
+                    <img src="./img/gallery/3.jpg" alt="chef finishing entrees">
+                    <img src="./img/gallery/4.jpg" alt="strawberry ice-cream">
+                    <img src="./img/gallery/5.jpg" alt="ramen without the soup">
+                    <img src="./img/gallery/6.jpg" alt="21 sushi bites">
+                    <img src="./img/gallery/7.jpg" alt="salmon and rice sushi">
+                    <img src="./img/gallery/8.jpg" alt="sushi bite in soy sauce">
+                    <img src="./img/gallery/9.jpg" alt="close up of a sushi bite">
+                </article>
+            </div>
+        </section>
+
+        <!-- GOOGLE MAPS SECTION -->
+
+        <!-- <section class="google-maps">
+            <iframe class="google-api" width="" height="450" style="border:0" loading="lazy" allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJFYxSVohskFQRC6AH1xscYJY&key=AIzaSyBfN0u00w29owauiATlua00usxoCDj2VPU"></iframe>
+        </section> -->
+
+        <!-- BOTTOM SECTION FOOTER -->
+
+        <footer>
+            <article class="contact-info-container">
+                <p class="contact-p">Contacts</p>
+                <p class="address-p">Somewhere Street, Postcode, Nowhereland</p>
+                <p class="tel-orders">Reservations and orders: <span class="tel-span">420696969</span></p>
+                <p class="email-p">E-mail HQ: <span class="hq-span">info@expensiverestaurant.lmao</span></p>
+                <p class="email-reservations">Email for reservations: <span
+                        class="reservation-span">whoareyoukidding@expensiverestaurant.lmao</span></p>
+            </article>
+
+            <article class="social-media-links">
+                <ul class="social-media-list">
+                    <li>
+                        <a href="#">
+                            <img src="./img/socialMediaIcons/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/socialMediaIcons/instagram.icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/socialMediaIcons/tripadvisor-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <img src="./img/logo.png" alt="" class="footer-logo">
+        </footer>
+    </main>
+</body>
+
+</html>
