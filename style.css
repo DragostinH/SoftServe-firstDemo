@@ -65,7 +65,8 @@ header {
     border-bottom: 1px solid var(--nav-background-color);
     border-right: 1px solid var(--nav-background-color);
     border-top: 1px solid var(--main-red);
-
+    /* Box shadow */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
 }
 
 .dropdown{
