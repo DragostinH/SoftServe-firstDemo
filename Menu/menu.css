@@ -10,8 +10,9 @@
     --nav-background-color: rgba(0, 0, 0, 0.3);
     --main-red: rgb(212, 41, 41);
     --menu-spread-background: #000;
-    --menu-filler-background:  #515151;
+    --menu-filler-background: #515151;
     --li-active-color: #c59d5f;
+    --product-background-color: #221b1a;
 }
 
 body {
@@ -168,22 +169,22 @@ header {
 }
 
 .menu-spread-ul li,
-.meals-ul{
+.meals-ul {
     padding: 1rem 1.5rem 1rem 1.5rem;
 }
 
 .menu-spread-ul a,
-.meals-ul a{
+.meals-ul a {
     color: white;
     transition: color 0.3s;
 }
 
-.li-active a{
+.li-active a {
     background-color: var(--menu-filler-background);
     color: var(--li-active-color);
 }
 
-.li-active{
+.li-active {
     background-color: var(--menu-filler-background);
 
 }
@@ -203,13 +204,129 @@ a {
 
 /* Menu items */
 
-.product-container{
-    
+.products-items-container {
+    /* Display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.selected-category {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: fit-content;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+h4{
+    font-weight: 400;
+    color: var(--menu-filler-background);
+}
+
+
+/* .products-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */
+
+.products {
+    display: grid;
+    align-items: center;
+    width: min(100%, 950px);
+    gap: 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 465px);
+    /* grid-template-columns: max(25%, 465px) max(25%, 465px); */
+
+
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    /* width: fit-content; */
+    border-right: 5px solid var(--main-red);
+    color: var(--pure-white);
+    background-color: var(--product-background-color);
+}
+.product-title{
+    font-size: large;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+}
+.product-mid-container {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.product-img {
+    width: max(60%, 280px);
+    border-radius: 0.5rem;
+}
+
+.product-bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.product-price{
+    font-size: 1.5rem;
+}
+.product-btn {
+    color: var(--pure-white);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.details-btn{
+    border: 1px solid var(--main-red);
+    background-color: var(--product-background-color);
+    transition: background-color 0.3s;
+}
+
+.add-to-basket-btn{
+    border: none;
+    background-color: var(--main-red);
+}
+
+.add-btn-icon{
+    width: 32px;
+    height: 32px;
+}
+
+.add-to-bskt-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.5rem;
+    border: 1px solid var(--main-red);
+    background-color: var(--main-red);
+    cursor: pointer;
 }
 
 
 /* shopping cart */
-.shopping-cart-btn{
+.shopping-cart-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,11 +341,11 @@ a {
     cursor: pointer;
 }
 
-.shopping-cart-icon{
+.shopping-cart-icon {
     border-bottom: 1px solid var(--pure-white);
 }
 
-.shopping-cart-view{
+.shopping-cart-view {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,7 +361,7 @@ a {
 }
 
 
-.hide-shopping-cart-icon{
+.hide-shopping-cart-icon {
     position: absolute;
     background-color: var(--pure-white);
     left: -8%;
@@ -255,7 +372,7 @@ a {
     cursor: pointer;
 }
 
-.title-container{
+.title-container {
     display: flex;
     align-items: center;
     width: fit-content;
@@ -263,7 +380,7 @@ a {
     gap: 0.5rem;
 }
 
-.item-list-container{
+.item-list-container {
     width: 75%;
     border-radius: 0.5rem;
     background-color: var(--pure-white);
@@ -271,13 +388,13 @@ a {
 
 
 
-.cart-total{
+.cart-total {
     margin: 0;
     font-size: small;
     color: white;
 }
 
-.shopping-cart-view{
+.shopping-cart-view {
     transform: translateX(115%);
 
 }
@@ -327,7 +444,10 @@ footer {
 }
 
 .menu-spread-ul a:hover,
-.meals-ul a:hover{
+.meals-ul a:hover {
     color: var(--li-active-color);
 }
 
+.details-btn:hover{
+    background-color: var(--main-red);
+}

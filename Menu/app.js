@@ -12,4 +12,15 @@ const menu = (() => {
         shoppingCartView.style.transform = `translateX(${115}%)`;
         cartShowBtn.style.display = 'flex';
     })
+
+    function fun(a){
+        let sum = a;
+        for (let i = 0; i < arguments.length; i++) {
+            const element = arguments[i];
+            sum += arguments[i];
+        }
+        return sum;
+    }
+
+    console.log(fun(1,2,3,4,5));
 })();
