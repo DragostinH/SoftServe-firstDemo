@@ -211,6 +211,8 @@ a {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    /* MArgin paddin */
+    margin-bottom: 1rem;
 }
 
 .selected-category {
@@ -312,6 +314,7 @@ h4{
 .add-btn-icon{
     width: 32px;
     height: 32px;
+    margin-right: 1rem;
 }
 
 .add-to-bskt-btn-container{
@@ -446,6 +449,10 @@ footer {
 .menu-spread-ul a:hover,
 .meals-ul a:hover {
     color: var(--li-active-color);
+}
+
+.menu:hover .dropdown-content{
+    display: grid;
 }
 
 .details-btn:hover{

@@ -1,4 +1,16 @@
+import createProductElement from "../scripts/createProductElement.js";
+import getProductImg from "./getProductImg.js";
+
 const menu = (() => {
+    const productImgs = getProductImg();
+    const productsWrapper = document.querySelector('.products');
+
+    const randomProduct = createProductElement('black pepper beef',
+        productImgs.entrees.mainDishes.blackPepperBeef,
+        'This thing is awesome',
+        '$13.99'
+    );
+
     const cartShowBtn = document.querySelector('.shopping-cart-btn');
     const shoppingCartView = document.querySelector('.shopping-cart-view');
     const hideShoppingCart = document.querySelector('.hide-shopping-cart-icon');
@@ -13,14 +25,6 @@ const menu = (() => {
         cartShowBtn.style.display = 'flex';
     })
 
-    function fun(a){
-        let sum = a;
-        for (let i = 0; i < arguments.length; i++) {
-            const element = arguments[i];
-            sum += arguments[i];
-        }
-        return sum;
-    }
+    productsWrapper.appendChild(randomProduct.productContainer);
 
-    console.log(fun(1,2,3,4,5));
 })();

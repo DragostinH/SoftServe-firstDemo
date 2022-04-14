@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contactUs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="menu.css">
-    <script src="./menu.js" defer></script>
+    <script src="./app.js" defer></script>
 
     <title>Menu</title>
 </head>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="../AboutUs/aboutUs.html">ABOUT US</a></li>
                     <li><a id="order-btn" href="#">ORDER</a></li>
                     <li><a href="#">CONTACT US</a></li>
                     <li><a href="#">LOGIN</a></li>
@@ -60,58 +60,34 @@
                 </ul>
             </nav>
         </header>
-        <!-- shopping cart -->
-        <section class="shopping-cart-container">
-            <div class="shopping-cart-btn show">
-                <img class="shopping-cart-icon" src="./img/shopping-cart-icon.png" alt="shopping cart icon">
-                <p class="cart-total">0.00lv</p>
-            </div>
-
-            <div class="shopping-cart-view hidden">
-                <div class="title-container">
-                    <img class="hide-shopping-cart-icon" src="./img/hide-shopping-cart-icon.png" alt="">
-                    <p class="cart-title">SHOPPING BASKET</p>
-                    <img src="./img/shopping-cart-icon.png" alt="">
-                </div>
-                <div class="item-list-container">
-                    <p>aki</p>
-                    <p>aki</p>
-                    <p>aki</p>
-                    <p>aki</p>
-                    <p>aki</p>
-                    <p>aki</p>
-                    <p>aki</p>
-                    <p>aki</p>
-                    <p>aki</p>
-                    <p>aki</p>
-                    <p>aki</p>
-                </div>
-                <div class="total-value-container">
-
-                </div>
-                <div class="order-btn-container">
-                    <button class="order-btn">ORDER</button>
-                </div>
-            </div>
-        </section>
         <!-- Mid section -->
+        <section class="contact-us-form-section">
+            <h1>CONTACT US</h1>
+            <article class="message-box">
+                <p class="form-submit-msg">Message sent!</p>
+            </article>
+            <article class="form-container">
+                <form action="#" class="contact-us-form">
+                    <label for="name">
+                        <p class="name-p">Name*</p>
+                        <input type="text" name="name" id="name" required>
+                    </label>
+                    <label for="email-address">
+                        <p class="email-address-p">Email*</p>
+                        <input type="email" name="email-address" id="email-address" required>
+                    </label>
+                    <label for="comment">
+                        <p class="comment-p">Comment*</p>
+                        <textarea name="comment" id="comment" cols="23" rows="5" maxlength="150" required></textarea>
+                    </label>
+                    <div class="form-btn-container">
+                        <input class="submit-btn" type="button" value="Submit">
+                        <input class="reset-btn" type="reset" value="Reset">
+                    </div>
+                </form>
+            </article>
 
-      
-        <section class="menu-spread-container">
-            <nav class="bottom-nav-menu-spread">
-                <ul class="menu-spread-ul">
-                    <li><a class="" href="../Menu/menu.html">Entrée</a></li>
-                    <li><a href="../Menu/sushi.html">SUSHI</a></li>
-                    <li class="menu-filter li-active"><a href="../Menu/drinks.html">DRINKS</a></li>
-                </ul>
-                <ul class="meals-ul">
-                    <li class="li-active"><a href="../Menu/drinks.html" class="">SODAS</a></li>
-                    <li><a href="../Menu/beers.html" class="">BEERS</a></li>
-                    <li><a href="../Menu/wines.html" class="">WINES</a></li>
-                </ul>
-            </nav>
         </section>
-
         <!-- Bottom footer section -->
         <footer>
             <article class="contact-info-container">
@@ -145,6 +121,7 @@
 
             <img src="../img/logo.png" alt="" class="footer-logo">
         </footer>
+    </main>
 </body>
 
 </html>
