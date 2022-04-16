@@ -23,7 +23,7 @@ export default function createProductElement(title, img, descr, price) {
     productTitle.textContent = title;
     productImg.src = `${img}`;
     productDesc.textContent = descr;
-    productPrice.textContent = price;
+    productPrice.textContent = `$${price}`;
     addToBsktBtn.textContent = 'ADD';
     detailsBtn.textContent = 'DETAILS';
     addBtnIcon.src = `${"./img/shopping-cart-icon.png"}`;

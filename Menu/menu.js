@@ -1,16 +1,9 @@
-import createProductElement from "../scripts/createProductElement.js";
-import getProductImg from "./getProductImg.js";
-
+import getFullMenuObj from "../scripts/getFullMenuObj.js";
+import createPageTitles from "../scripts/createPageTitles.js";
+import createProductSpread from "../scripts/createProductSpread.js";
 const menu = (() => {
-    const productImgs = getProductImg();
-    const productsWrapper = document.querySelector('.products');
-
-    const randomProduct = createProductElement('black pepper beef',
-        productImgs.entrees.mainDishes.blackPepperBeef,
-        'This thing is awesome',
-        '$13.99'
-    );
-
+    // Storage
+    const myStorage = window.localStorage;
     const cartShowBtn = document.querySelector('.shopping-cart-btn');
     const shoppingCartView = document.querySelector('.shopping-cart-view');
     const hideShoppingCart = document.querySelector('.hide-shopping-cart-icon');
@@ -23,8 +16,17 @@ const menu = (() => {
     hideShoppingCart.addEventListener('click', () => {
         shoppingCartView.style.transform = `translateX(${115}%)`;
         cartShowBtn.style.display = 'flex';
-    })
+    });
 
-    productsWrapper.appendChild(randomProduct.productContainer);
+
+
+    // Functions:
+    createPageTitles();
+    createProductSpread();
+    // TESTING ---------------
+
+
+
+
 
 })();
