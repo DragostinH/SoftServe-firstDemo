@@ -1,6 +1,7 @@
 import getFullMenuObj from "../scripts/getFullMenuObj.js";
 import createPageTitles from "../scripts/createPageTitles.js";
 import createProductSpread from "../scripts/createProductSpread.js";
+import createShoppingCartStructure from "../scripts/createShoppingCardStructure.js";
 const menu = (() => {
     // Storage
     const myStorage = window.localStorage;
@@ -25,7 +26,14 @@ const menu = (() => {
     createProductSpread();
     // TESTING ---------------
 
+    const shopCartStructure =
+        [
+            {
+            }
+        ]
 
+
+    createShoppingCartStructure()
 
 
 
