@@ -1,10 +1,12 @@
 export default function createShoppingCartStructure() {
     const myStorage = window.localStorage;
-    const shopCartStructure = [{
-        qty:1,
-        name:'aki',
-        price:18.99
-    }];
-    const stingified = JSON.stringify(shopCartStructure);
-    myStorage.setItem('shoppingCart', stingified);
+    if(Object.keys(myStorage).length === 0){
+        const shopCartStructure = {
+        };
+        const stingified = JSON.stringify(shopCartStructure);
+        myStorage.setItem('shoppingCart', stingified);
+
+    }else{
+        console.log('There is storage data');
+    }
 }

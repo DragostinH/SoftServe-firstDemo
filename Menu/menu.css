@@ -393,10 +393,35 @@ h4 {
 
 .order-entry {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
     align-items: center;
     border: 1px solid var(--main-red);
 }
+
+.price-and-remove-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-list-remove{
+    background-color: var(--main-red);
+    border: 1px solid black;
+    border-radius: 50%;
+    color: var(--pure-white);
+}
+
+.item-list-remove:after {
+    content: '\26CC';
+  }
+
+  .item-list-remove:before {
+    transform: rotate(45deg);
+  }
+  .item-list-remove:after {
+    transform: rotate(-45deg);
+  }
 
 .cart-total {
     margin: 0;
@@ -415,8 +440,7 @@ h4 {
 }
 
 .shopping-cart-view {
-    /* transform: translateX(115%); */
-
+    transform: translateX(115%);
 }
 
 /* BOTTOM PART FOOTER */

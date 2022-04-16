@@ -54,8 +54,6 @@
                     <li><a href="../AboutUs/aboutUs.html">ABOUT US</a></li>
                     <li><a id="order-btn" href="./menu.html">ORDER</a></li>
                     <li><a href="../ContactUs/contactUs.html">CONTACT US</a></li>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">Placeholder</a></li>
                 </ul>
             </nav>
         </header>
@@ -63,7 +61,7 @@
         <section class="shopping-cart-container">
             <div class="shopping-cart-btn show">
                 <img class="shopping-cart-icon" src="./img/shopping-cart-icon.png" alt="shopping cart icon">
-                <p class="cart-total">0.00lv</p>
+                <p class="cart-total">$0.00</p>
             </div>
 
             <div class="shopping-cart-view hidden">
@@ -73,10 +71,18 @@
                     <img src="./img/shopping-cart-icon.png" alt="">
                 </div>
                 <div class="item-list-container">
-                    <p>1xWhite wine - 8.99lv</p>
+                    <div class="order-entry">
+                        <p class="item-list-qty">1</p>
+                        <p class="item-list-product-name">black pepper beef</p>
+                        <div class="price-and-remove-container">
+                            <p class="item-list-price">18.99lv</p>
+                            <button class="item-list-remove"></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="total-value-container">
-
+                    <p class="total-p">Total:</p>
+                    <p class="total-value">$0.00</p>
                 </div>
                 <div class="order-btn-container">
                     <button class="order-btn">ORDER</button>

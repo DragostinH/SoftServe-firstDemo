@@ -2,11 +2,16 @@ import createDiv from "./createElementsFunctions/createDiv.js"
 import createP from "./createElementsFunctions/createParagraph.js";
 import createImg from "./createElementsFunctions/createImg.js";
 import createBtn from "./createElementsFunctions/createBtn.js";
+import createOrderItem from "./createOrderItem.js";
+import addItemToStorage from "./addItemToStorage.js";
+import refreshShoppingCart from "./refreshShoppingCart.js";
+import calculateTotalBasketValue from "./calculateTotalBasketValue.js";
 
 export default function createProductElement(title, img, descr, price) {
     const productContainer = createDiv('product-container');
     const productMidContainer = createDiv('product-mid-container');
     const productBottomContainer = createDiv('product-bottom-container');
+
 
     const productTitle = createP('product-title');
     const productImg = createImg('product-img');
@@ -19,7 +24,6 @@ export default function createProductElement(title, img, descr, price) {
     const addToBsktBtn = createBtn('add-to-basket-btn product-btn');
     const addBtnIcon = createImg('add-btn-icon');
 
-
     productTitle.textContent = title;
     productImg.src = `${img}`;
     productDesc.textContent = descr;
@@ -27,6 +31,20 @@ export default function createProductElement(title, img, descr, price) {
     addToBsktBtn.textContent = 'ADD';
     detailsBtn.textContent = 'DETAILS';
     addBtnIcon.src = `${"./img/shopping-cart-icon.png"}`;
+
+
+    addToBsktBtn.addEventListener('click', () => {
+        const orderObj = {
+            name: title,
+            price: price,
+            qty: 1
+        };
+        const orderItem = createOrderItem(title, price);
+        addItemToStorage(orderObj);
+        refreshShoppingCart();
+        calculateTotalBasketValue();
+    });
+
     // Appends
     productContainer.appendChild(productTitle);
     productContainer.appendChild(productMidContainer);

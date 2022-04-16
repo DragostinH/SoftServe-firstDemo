@@ -2,6 +2,10 @@ import getFullMenuObj from "../scripts/getFullMenuObj.js";
 import createPageTitles from "../scripts/createPageTitles.js";
 import createProductSpread from "../scripts/createProductSpread.js";
 import createShoppingCartStructure from "../scripts/createShoppingCardStructure.js";
+import createOrderItem from "../scripts/createOrderItem.js";
+import addItemToStorage from "../scripts/addItemToStorage.js";
+import refreshShoppingCart from "../scripts/refreshShoppingCart.js";
+import calculateTotalBasketValue from "../scripts/calculateTotalBasketValue.js";
 const menu = (() => {
     // Storage
     const myStorage = window.localStorage;
@@ -26,14 +30,10 @@ const menu = (() => {
     createProductSpread();
     // TESTING ---------------
 
-    const shopCartStructure =
-        [
-            {
-            }
-        ]
+    createShoppingCartStructure();
+    refreshShoppingCart();
 
-
-    createShoppingCartStructure()
+    calculateTotalBasketValue();
 
 
 
