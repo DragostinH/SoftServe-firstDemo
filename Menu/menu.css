@@ -410,6 +410,7 @@ h4 {
     border: 1px solid black;
     border-radius: 50%;
     color: var(--pure-white);
+    cursor: pointer;
 }
 
 .item-list-remove:after {

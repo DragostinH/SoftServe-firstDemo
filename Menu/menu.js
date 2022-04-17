@@ -7,8 +7,7 @@ import addItemToStorage from "../scripts/addItemToStorage.js";
 import refreshShoppingCart from "../scripts/refreshShoppingCart.js";
 import calculateTotalBasketValue from "../scripts/calculateTotalBasketValue.js";
 const menu = (() => {
-    // Storage
-    const myStorage = window.localStorage;
+    // Shopping cart transition
     const cartShowBtn = document.querySelector('.shopping-cart-btn');
     const shoppingCartView = document.querySelector('.shopping-cart-view');
     const hideShoppingCart = document.querySelector('.hide-shopping-cart-icon');
@@ -22,17 +21,11 @@ const menu = (() => {
         shoppingCartView.style.transform = `translateX(${115}%)`;
         cartShowBtn.style.display = 'flex';
     });
-
-
-
     // Functions:
     createPageTitles();
     createProductSpread();
-    // TESTING ---------------
-
     createShoppingCartStructure();
     refreshShoppingCart();
-
     calculateTotalBasketValue();
 
 
