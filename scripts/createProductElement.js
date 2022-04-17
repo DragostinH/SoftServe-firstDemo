@@ -6,6 +6,7 @@ import createOrderItem from "./createOrderItem.js";
 import addItemToStorage from "./addItemToStorage.js";
 import refreshShoppingCart from "./refreshShoppingCart.js";
 import calculateTotalBasketValue from "./calculateTotalBasketValue.js";
+import moveShoppingCart from "./moveShoppingCart.js";
 
 export default function createProductElement(title, img, descr, price) {
     const productContainer = createDiv('product-container');
@@ -42,6 +43,7 @@ export default function createProductElement(title, img, descr, price) {
         const orderItem = createOrderItem(title, price);
         addItemToStorage(orderObj);
         refreshShoppingCart();
+        moveShoppingCart();
         calculateTotalBasketValue();
     });
 
