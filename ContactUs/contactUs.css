@@ -218,7 +218,8 @@ textarea:-webkit-autofill:focus {
 
 #name,
 #email-address,
-#comment {
+#comment,
+#subject {
     background-color: var(--product-background-color);
     border: none;
     border-bottom: 1px solid var(--pure-white);
@@ -231,7 +232,8 @@ textarea:-webkit-autofill:focus {
 
 .name-p,
 .email-address-p,
-.comment-p {
+.comment-p,
+.subject-p {
     font-size: 1.5rem;
 }
 
