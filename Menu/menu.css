@@ -395,6 +395,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     padding: 0 1rem 0 1rem;
+    text-transform: capitalize;
     align-items: center;
     border: 1px solid var(--main-red);
 }
@@ -438,6 +439,16 @@ h4 {
 
 .total-value {
     font-weight: bold;
+}
+
+.order-btn{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: large;
+    border: 2px solid var(--pure-white);
+    border-radius: 0.5rem;
+    background-color: var(--pure-white);
+    color: black;
+    transition: color 0.3s;
 }
 
 .shopping-cart-view {
@@ -486,6 +497,10 @@ footer {
 
 #order-btn:hover {
     color: var(--main-red);
+}
+.order-btn:hover {
+    color: var(--main-red);
+    cursor: pointer;
 }
 
 .menu-spread-ul a:hover,

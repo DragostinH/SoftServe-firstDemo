@@ -220,9 +220,10 @@ blockquote p::after {
 }
 
 .gallery-article {
-    display: grid;
-    width: 932px;
-    grid-template-columns: repeat(auto-fit, 300px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
     gap: 1rem;
 }
 
@@ -244,23 +245,43 @@ blockquote p::after {
     border: 1px solid black;
 }
 
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.left-img,
+.right-img{
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .image-slider-container {
-    gap: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
 }
+
+
 
 
 .img-gallery-container {
     display: flex;
     position: relative;
-    border: 1px solid black;
-    height: 600px;
-    width: 400px;
+    height: 500px;
+    width: 100%;
     overflow: hidden;
 }
+
+
 
 .slide {
     position: absolute;
@@ -282,6 +303,7 @@ blockquote p::after {
     height: 100%;
     width: 100%;
 }
+
 
 
 .slide:nth-child(1) {
@@ -325,8 +347,11 @@ h2 {
 }
 
 .gallery-article img {
+    background-position: center;
+    background-size: cover;
     width: 300px;
-    height: 350px;
+    /* width: 300px; */
+    /* height: 350px; */
 }
 
 

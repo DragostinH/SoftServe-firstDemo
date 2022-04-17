@@ -19,7 +19,7 @@ export default function createProductElement(title, img, descr, price) {
 
     const productPrice = createP('product-price');
     const productBtnContainer = createDiv('product-btn-container');
-    const detailsBtn = createBtn('details-btn product-btn');
+    // const detailsBtn = createBtn('details-btn product-btn');
     const addToBstkCont = createDiv('add-to-bskt-btn-container');
     const addToBsktBtn = createBtn('add-to-basket-btn product-btn');
     const addBtnIcon = createImg('add-btn-icon');
@@ -29,7 +29,7 @@ export default function createProductElement(title, img, descr, price) {
     productDesc.textContent = descr;
     productPrice.textContent = `$${price}`;
     addToBsktBtn.textContent = 'ADD';
-    detailsBtn.textContent = 'DETAILS';
+    // detailsBtn.textContent = 'DETAILS';
     addBtnIcon.src = `${"./img/shopping-cart-icon.png"}`;
 
 
@@ -56,7 +56,7 @@ export default function createProductElement(title, img, descr, price) {
     productBottomContainer.appendChild(productPrice);
     productBottomContainer.appendChild(productBtnContainer);
 
-    productBtnContainer.appendChild(detailsBtn);
+    // productBtnContainer.appendChild(detailsBtn);
     productBtnContainer.appendChild(addToBstkCont);
 
     addToBstkCont.appendChild(addToBsktBtn);
