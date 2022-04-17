@@ -16,5 +16,4 @@ export default function calculateTotalBasketValue() {
 
     totalValueBigCart.textContent = `$${total.toFixed(2)}`;
     totalValueSmallCart.textContent = `$${total.toFixed(2)}`;
-    console.log(total);
 }
