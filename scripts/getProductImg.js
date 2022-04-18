@@ -65,8 +65,6 @@ export default function getProductImg() {
                 penfolds:"../Menu/img/drinks/wines/penfolds.jpg"
             }
         }
-
     }
-
     return productImgs;
 }

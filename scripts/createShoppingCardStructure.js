@@ -1,6 +1,5 @@
 export default function createShoppingCartStructure() {
     const myStorage = window.localStorage;
-    const parsedStorage = JSON.parse(JSON.stringify(myStorage));
     const shopCartStructure = {
     };
     if (Object.keys(myStorage).length === 0) {

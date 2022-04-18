@@ -4,7 +4,7 @@ import { changeBackgroundImage } from "./changeBackgroundImage.js";
 const indexPage = (() => {
     // translate value for gallery slider
     let translateValue = 0;
-    
+
     const imageSliderContainer = document.querySelector('.image-slider-container');
     const galleryContainer = document.querySelector('.gallery-container');
     const header = document.querySelector('header');
@@ -18,19 +18,18 @@ const indexPage = (() => {
     const arr = Array.from(slide);
 
 
-    
+
     // Gallery slider -------------
     window.addEventListener('resize', () => {
         if (window.innerWidth <= 1027) {
             imageSliderContainer.classList.remove('hidden');
             galleryContainer.classList.add('hidden');
 
-        } else if (window.innerWidth > 1027) {
+        } else {
             imageSliderContainer.classList.add('hidden');
             galleryContainer.classList.remove('hidden');
         }
     })
-
     leftBtn.addEventListener('click', () => {
 
         translateValue += 100;
@@ -40,7 +39,6 @@ const indexPage = (() => {
 
         arr.forEach(e => {
             e.style.transform = `translateX(${translateValue}%)`;
-
         });
     });
     rightBtn.addEventListener('click', () => {

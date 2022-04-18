@@ -4,7 +4,7 @@ import createShoppingCartStructure from "../scripts/createShoppingCardStructure.
 import refreshShoppingCart from "../scripts/refreshShoppingCart.js";
 import calculateTotalBasketValue from "../scripts/calculateTotalBasketValue.js";
 const menu = (() => {
-    // Shopping cart transition
+    // Shopping cart translate
     const cartShowBtn = document.querySelector('.shopping-cart-btn');
     const shoppingCartView = document.querySelector('.shopping-cart-view');
     const hideShoppingCart = document.querySelector('.hide-shopping-cart-icon');
@@ -24,7 +24,4 @@ const menu = (() => {
     createShoppingCartStructure();
     refreshShoppingCart();
     calculateTotalBasketValue();
-
-
-
 })();

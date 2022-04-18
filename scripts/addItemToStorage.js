@@ -4,10 +4,8 @@ export default function addItemToStorage(item) {
     if (item.name in parsedStorage) {
         const qty = parsedStorage[item.name].qty;
         parsedStorage[item.name].qty++;
-        console.log(parsedStorage[item.name].qty);
     } else {
         parsedStorage[item.name] = item;
-
     }
 
     localStorage.shoppingCart = JSON.stringify(parsedStorage);
