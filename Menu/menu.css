@@ -37,13 +37,11 @@ header {
     justify-content: space-between;
     /* Dimensions */
     height: min(50%, 600px);
-
     /* Background image */
     background: url("../img/menu-page-header.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     /* Border */
 }
 

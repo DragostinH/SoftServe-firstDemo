@@ -4,6 +4,7 @@ export default function calculateTotalBasketValue() {
     const totalValueSmallCart = document.querySelector('.cart-total');
     if (Object.keys(localStorage).length > 0) {
         const parsedStorage = JSON.parse(localStorage.shoppingCart);
+        console.log(parsedStorage);
         for (const key in parsedStorage) {
             const element = parsedStorage[key];
             if(element.qty > 1){

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <script type="module" src="../scripts/createOrderSummary.js" defer></script>
+    <title>Order Summary</title>
+</head>
+
+<body>
+    <!-- Top section -->
+    <header>
+        <div class="logo-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../img/logo.png" class="logo-img" alt="best company logo ever">
+            </a>
+        </div>
+        <nav class="top-right-nav">
+            <ul class="nav-list">
+                <li class="dropdown-li menu">
+                    <a class="menu-btn" href="#">MENU</a>
+                    <div class="dropdown-content">
+                        <div class="entree dropdown">
+                            <a class="entree-title" href="../Menu/menu.html">Entrée</a>
+                            <a href="../Menu/menu.html">Main dishes</a>
+                            <a href="../Menu/rice.html">Rice</a>
+                            <a href="../Menu/salads.html">Salads</a>
+                            <a href="../Menu/fish.html">Fish</a>
+                        </div>
+                        <div class="sushi dropdown">
+                            <a class="sushi-title" href="../Menu/sushi.html">Sushi</a>
+                            <a href="../Menu/sushi.html">Combo</a>
+                            <a href="../Menu/nagiri.html">Nagiri</a>
+                            <a href="../Menu/sashimi.html">Sashimi</a>
+
+                        </div>
+                        <div class="drinks dropdown">
+                            <a class="drinks-title" href="../Menu/drinks.html">Drinks</a>
+                            <a href="../Menu/drinks.html">Sodas</a>
+                            <a href="../Menu/beers.html">Beers</a>
+                            <a href="../Menu/wines.html">Wines</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../AboutUs/aboutUs.html">ABOUT US</a></li>
+                <li><a id="order-btn" href="../Menu/menu.html">ORDER</a></li>
+                <li><a href="../ContactUs/contactUs.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Mid-section -->
+    <section class="order-summary">
+        <article class="order-items-container">
+            <div class="order-item">
+                <div class="order-item-left">
+                    <p>1 x </p>
+                    <p>Item name</p>
+                </div>
+                <div class="order-item-right">
+                    <p>price</p>
+                    <button>X</button>
+                </div>
+            </div>
+        </article>
+    </section>
+
+</body>
+
+</html>

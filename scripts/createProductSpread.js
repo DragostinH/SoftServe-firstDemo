@@ -15,8 +15,7 @@ export default function createProductSpread(){
     const productsWrapper = document.querySelector('.products');
     for (const key in currentProductsObj) {
         if (Object.hasOwnProperty.call(currentProductsObj, key)) {
-            const element = currentProductsObj[key];
-            productsWrapper.appendChild(element.productContainer);
+            productsWrapper.appendChild(currentProductsObj[key].productContainer);
         }
     }
 }

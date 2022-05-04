@@ -1,4 +1,4 @@
-export default function createP(className = '') {
+export default function createParagraph(className = '') {
     const paragraph = document.createElement('p');
     const arr = className.split(' ');
     for (let i = 0; i < arr.length; i++) {

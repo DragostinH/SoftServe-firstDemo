@@ -27,16 +27,10 @@ export default function createOrderItem(name, price, qty) {
                 itemListCont.removeChild(orderEntry);
             }
         }
-        
         localStorage.shoppingCart = JSON.stringify(parsedStorage);
         refreshShoppingCart();
         calculateTotalBasketValue();
-
-        // itemListCont.removeChild(orderEntry);
     })
-
-
-
     orderEntry.appendChild(quantity);
     orderEntry.appendChild(itemName);
     orderEntry.appendChild(priceAndRemoveCont);

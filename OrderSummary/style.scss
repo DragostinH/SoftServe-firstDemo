@@ -1,0 +1,170 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --pure-white: white;
+    --nav-background-color: rgba(0, 0, 0, 0.3);
+    --main-red: rgb(212, 41, 41);
+    --menu-spread-background: #000;
+    --menu-filler-background: #515151;
+    --li-active-color: #c59d5f;
+    --product-background-color: #221b1a;
+}
+
+body {
+    /* Dimensions */
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--pure-white);
+}
+
+.page-container {
+    height: 100%;
+    width: 100%;
+
+}
+
+header {
+    /* display */
+    display: flex;
+    justify-content: space-between;
+    /* Dimensions */
+    height: 450px;
+    /* Background image */
+    background: url("./img/header-cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Border */
+}
+
+/* NAV BAR ON TOP */
+
+.top-right-nav {
+    margin-right: 1.35rem;
+    border-radius: 0.5rem;
+    height: min-content;
+    background-color: var(--nav-background-color);
+}
+
+.dropdown-content {
+    /* Background */
+    background-color: rgb(58, 58, 58);
+    /* Box sizing */
+    /* padding: 1rem; */
+    gap: 1rem;
+    /* Display */
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    /* border */
+    border-bottom: 1px solid var(--nav-background-color);
+    border-right: 1px solid var(--nav-background-color);
+    border-top: 1px solid var(--main-red);
+
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-left: 1px solid var(--nav-background-color);
+
+}
+
+.dropdown a {
+    text-transform: uppercase;
+}
+
+.entree-title:nth-child(1),
+.sushi-title:nth-child(1),
+.drinks-title:nth-child(1) {
+    font-weight: bold;
+}
+
+.dropdown-content.show {
+    display: grid;
+}
+
+.nav-list {
+    background-color: black;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-weight: 300;
+}
+
+.nav-list li {
+    margin: 1rem;
+}
+
+#order-btn {
+    background-color: var(--pure-white);
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    color: black;
+
+}
+.order-summary{
+    display: flex;
+    justify-content: center;
+}
+
+.order-items-container{
+    border: 1px solid red;
+    width: 75%;
+    display: grid;
+}
+
+.order-item{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.order-item-left,
+.order-item-right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* EFFECTS ------------ */
+
+/* HOVER */
+.nav-list a:hover {
+    color: var(--main-red);
+}
+
+#order-btn:hover {
+    color: var(--main-red);
+}
+.order-btn:hover {
+    color: var(--main-red);
+    cursor: pointer;
+}
+
+.menu-spread-ul a:hover,
+.meals-ul a:hover {
+    color: var(--li-active-color);
+}
+
+.menu:hover .dropdown-content {
+    display: grid;
+}
+
+.details-btn:hover {
+    background-color: var(--main-red);
+}

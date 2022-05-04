@@ -15,9 +15,7 @@ const indexPage = (() => {
     const rightBtn = document.querySelector('.right-img')
 
     const slide = document.querySelectorAll('.slide');
-    const arr = Array.from(slide);
-
-
+    const galleryArr = Array.from(slide);
 
     // Gallery slider -------------
     window.addEventListener('resize', () => {
@@ -37,7 +35,7 @@ const indexPage = (() => {
             translateValue = -800;
         }
 
-        arr.forEach(e => {
+        galleryArr.forEach(e => {
             e.style.transform = `translateX(${translateValue}%)`;
         });
     });
@@ -48,9 +46,8 @@ const indexPage = (() => {
             translateValue = 0;
         }
 
-        arr.forEach(e => {
+        galleryArr.forEach(e => {
             e.style.transform = `translateX(${translateValue}%)`;
-
         });
     });
 
