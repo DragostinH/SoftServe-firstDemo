@@ -6,7 +6,6 @@ import refreshShoppingCart from "./refreshShoppingCart.js";
 
 export default function createOrderItem(name, price, qty) {
     const itemListCont = document.querySelector('.item-list-container');
-
     const orderEntry = createDiv('order-entry');
     const priceAndRemoveCont = createDiv('price-and-remove-container');
     const quantity = createP('item-list-qty');

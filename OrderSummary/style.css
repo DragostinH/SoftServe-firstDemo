@@ -12,7 +12,6 @@
   --main-red: rgb(212, 41, 41);
   --menu-spread-background: #000;
   --menu-filler-background: #515151;
-  --li-active-color: #c59d5f;
   --product-background-color: #221b1a;
 }
 
@@ -134,25 +133,35 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .order-items-container {
-  border: 1px solid red;
-  width: 75%;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  border: 2px solid #d8d4d4;
+  width: 75%;
+  padding: 1.5rem;
 }
 
 .order-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  border-bottom: 1px solid #c59d5f;
 }
 
 .order-item-left,
@@ -160,10 +169,29 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1rem;
+}
+
+.order-summery-item-name {
+  color: #c59d5f;
+}
+
+.order-summary-item-price,
+.order-summary-qty {
+  font-weight: bold;
+}
+
+.order-item-right {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.total-value {
+  font-weight: bold;
 }
 
 /* EFFECTS ------------ */

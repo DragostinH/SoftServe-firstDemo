@@ -1,3 +1,5 @@
+$li-active-color: #c59d5f;
+
 *,
 ::after,
 ::before {
@@ -11,7 +13,6 @@
     --main-red: rgb(212, 41, 41);
     --menu-spread-background: #000;
     --menu-filler-background: #515151;
-    --li-active-color: #c59d5f;
     --product-background-color: #221b1a;
 }
 
@@ -117,28 +118,52 @@ header {
     color: black;
 
 }
+
+// MID SECTION
 .order-summary{
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
 .order-items-container{
-    border: 1px solid red;
-    width: 75%;
     display: grid;
+    grid-template-columns: 1fr;
+    border: 2px solid #d8d4d4;
+    width: 75%;
+    padding: 1.5rem;
 }
 
 .order-item{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    border-bottom:1px solid $li-active-color;
 }
 
 .order-item-left,
 .order-item-right{
     display: flex;
+    gap: 1rem;
+}
+
+.order-summery-item-name{
+    color: $li-active-color;
+}
+
+.order-summary-item-price,
+.order-summary-qty{
+    font-weight: bold;
+}
+
+.order-item-right{
     align-items: center;
-    gap: 2rem;
+    justify-content: right;
+}
+
+.total-value{
+    font-weight: bold;
 }
 
 /* EFFECTS ------------ */
