@@ -143,6 +143,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 2rem;
 }
 
 .order-items-container {
@@ -153,6 +154,7 @@ header {
   border: 2px solid #d8d4d4;
   width: 75%;
   padding: 1.5rem;
+  border-radius: 0.3rem;
 }
 
 .order-item {
@@ -194,6 +196,94 @@ header {
   font-weight: bold;
 }
 
+.remove-item-summary,
+.continue-btn {
+  background-color: #c59d5f;
+  color: var(--pure-white);
+  font-weight: bold;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border-radius: 1rem;
+  border: 2px solid var(--menu-filler-background);
+  -webkit-transition: color 0.2s ease-in, backgroundColor 0.2s ease-in;
+  transition: color 0.2s ease-in, backgroundColor 0.2s ease-in;
+}
+
+.continue-btn {
+  font-size: 1.75rem;
+  margin: 1rem;
+}
+
+legend {
+  text-align: center;
+}
+
+.collect-or-deliver {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  border: 2px solid #d8d4d4;
+  color: #c59d5f;
+  border-radius: 0.2rem;
+}
+
+.click-and-collect,
+.home-delivery {
+  width: 45%;
+  padding: 0.7rem;
+  border: 2px solid;
+  border-radius: 0.2rem;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border: none;
+}
+
+/* BOTTOM PART FOOTER */
+footer p,
+footer span {
+  color: white;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: black;
+}
+
+.contact-p,
+.address-p,
+.tel-orders,
+.email-p,
+.email-reservations {
+  font-weight: 900;
+}
+
+.tel-span,
+.hq-span,
+.reservation-span {
+  font-weight: 300;
+}
+
 /* EFFECTS ------------ */
 /* HOVER */
 .nav-list a:hover {
@@ -221,5 +311,12 @@ header {
 
 .details-btn:hover {
   background-color: var(--main-red);
+}
+
+.remove-item-summary:hover,
+.continue-btn:hover {
+  color: #c59d5f;
+  background-color: var(--pure-white);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
