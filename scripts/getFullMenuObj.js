@@ -16,7 +16,7 @@ export default function getFullMenuObj() {
             ribeye:
                 createProductElement("ribeye", productImgs.entrees.mainDishes.ribeye, "Black Angus steak, wasabi butter, garlic chips", 30.99),
             tandooriSteak:
-                createProductElement("tandoori Steak", productImgs.entrees.mainDishes.tandooriSteak, "Marinated turkey breast, edamame, avocado mousse, sweet potato mousse", 15.99)
+                createProductElement("tandoori Steak", productImgs.entrees.mainDishes.tandooriSteak, "Marinated turkey breast, edamame, avocado mousse, sweet potato mousse", 15.99),
         },
         rice: {
             toriMeshi:

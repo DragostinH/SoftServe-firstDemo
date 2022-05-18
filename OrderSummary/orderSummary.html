@@ -56,38 +56,62 @@
     </header>
     <!-- Mid-section -->
 
-    <section class="order-summary">
+    <div class="order-slider">
+        <section class="order-summary">
+            <article class="step-count-container">
 
-        <article class="step-count-container">
-            
-        </article>
-        <article class="order-items-container">
+            </article>
+            <article class="order-items-container">
+            </article>
+            <article class="collect-or-deliver">
+                <fieldset>
+                    <legend>Choose click&collect or home delivery</legend>
+                    <div class="click-and-collect">
+                        <label class="click-collect-label" for="clickCollect-option">
+                            <input type="radio" name="collectOrDeliver" id="clickCollect-option">
+                            <span>Collect and save 10% off your order.</span>
+                        </label>
+                    </div>
+                    <div class="home-delivery">
+                        <label for="homeDelivery-option">
+                            <input checked type="radio" name="collectOrDeliver" id="homeDelivery-option">
+                            <span>Home Delivery </span>
+                        </label>
+                    </div>
+                </fieldset>
+            </article>
+            <p class="total-value">Total: </p>
+            <div class="continue-btn-container">
+                <button class="continue-btn">Continue</button>
+            </div>
+        </section>
+        <section class="order-delivery-details">
+            <form class="delivery-details-form" action="">
+                <label for=""> <p>Name</p>
+                    <input type="text" name="" id="">
+                </label>
+                <label for=""> <p>City</p>
+                    <input type="text" name="" id="">
+                </label>
+                <label for=""> <p>Street</p>
+                    <input type="text" name="" id="">
+                </label>
+                <label for=""> <p>Postcode</p>
+                    <input type="text" name="" id="">
+                </label>
+                <label for=""> <p>Tel</p>
+                    <input type="tel" name="" id="">
+                </label>
+                <label for=""> <p>Email</p>
+                    <input type="email" name="" id="">
+                </label>
 
-        </article>
+                <textarea name="" id="" cols="30" rows="8"></textarea>
+            </form>
+        </section>
+        
+    </div>
 
-        <article class="collect-or-deliver">
-            <fieldset>
-                <legend>Choose click&collect or home delivery</legend>
-                <div class="click-and-collect">
-                    <label for="clickCollect-option">
-                        <input type="radio" name="collectOrDeliver" id="clickCollect-option">
-                        <span>Collect and save 10% off your order.</span>
-                    </label>
-                </div>
-                <div class="home-delivery">
-                    <label for="homeDelivery-option">
-                        <input checked type="radio" name="collectOrDeliver" id="homeDelivery-option">
-                        <span>Home Delivery </span>
-                    </label>
-                </div>
-            </fieldset>
-        </article>
-        <p class="total-value">Total: </p>
-
-        <div class="continue-btn-container">
-            <button class="continue-btn">Continue</button>
-        </div>
-    </section>
     <!-- Bottom footer section -->
     <footer>
         <article class="contact-info-container">

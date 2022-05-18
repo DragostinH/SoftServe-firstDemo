@@ -290,7 +290,6 @@ blockquote p::after {
     /* border: 1px solid red; */
     transition: all 0.25s ease-in-out;
 }
-
 .img-1,
 .img-2,
 .img-3,
@@ -303,6 +302,7 @@ blockquote p::after {
     height: 100%;
     width: 100%;
 }
+
 
 
 

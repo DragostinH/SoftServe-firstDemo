@@ -129,6 +129,18 @@ header {
   color: black;
 }
 
+.order-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .order-summary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,9 +156,10 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
+  width: 100%;
 }
 
-.order-items-container {
+.order-summary .order-items-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -157,7 +170,7 @@ header {
   border-radius: 0.3rem;
 }
 
-.order-item {
+.order-summary .order-item {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -166,24 +179,24 @@ header {
   border-bottom: 1px solid #c59d5f;
 }
 
-.order-item-left,
-.order-item-right {
+.order-summary .order-item-left,
+.order-summary .order-item-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
 
-.order-summery-item-name {
+.order-summary .order-summery-item-name {
   color: #c59d5f;
 }
 
-.order-summary-item-price,
-.order-summary-qty {
+.order-summary .order-summary-item-price,
+.order-summary .order-summary-qty {
   font-weight: bold;
 }
 
-.order-item-right {
+.order-summary .order-item-right {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -192,12 +205,12 @@ header {
           justify-content: right;
 }
 
-.total-value {
+.order-summary .total-value {
   font-weight: bold;
 }
 
-.remove-item-summary,
-.continue-btn {
+.order-summary .remove-item-summary,
+.order-summary .continue-btn {
   background-color: #c59d5f;
   color: var(--pure-white);
   font-weight: bold;
@@ -208,9 +221,34 @@ header {
   transition: color 0.2s ease-in, backgroundColor 0.2s ease-in;
 }
 
-.continue-btn {
+.order-summary .continue-btn {
   font-size: 1.75rem;
   margin: 1rem;
+}
+
+.order-delivery-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid red;
+  position: absolute;
+  background-color: var(--pure-white);
+  width: 100%;
+  left: -100%;
+}
+
+.order-delivery-details .delivery-details-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 legend {

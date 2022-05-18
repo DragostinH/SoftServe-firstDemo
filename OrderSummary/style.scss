@@ -120,71 +120,85 @@ header {
 }
 
 // MID SECTION
+.order-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .order-summary{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
+    .order-items-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 2px solid #d8d4d4;
+        width: 75%;
+        padding: 1.5rem;
+        border-radius: 0.3rem;
+    }
+    .order-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        border-bottom:1px solid $li-active-color;
+    }
+    .order-item-left,
+    .order-item-right{
+        display: flex;
+        gap: 1rem;
+    }
+    .order-summery-item-name{
+        color: $li-active-color;
+    }
+    .order-summary-item-price,
+    .order-summary-qty{
+        font-weight: bold;
+    }
+    .order-item-right{
+        align-items: center;
+        justify-content: right;
+    }
+    
+    .total-value{
+        font-weight: bold;
+    }
+    
+    .remove-item-summary,
+    .continue-btn{
+        background-color: $li-active-color;
+        color: var(--pure-white);
+        font-weight: bold;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        border-radius: 1rem;
+        border: 2px solid var(--menu-filler-background);
+        transition: color 0.2s ease-in, backgroundColor 0.2s ease-in;
+    
+    }
+    
+    .continue-btn{
+        font-size: 1.75rem;
+        margin: 1rem;
+    }
 }
 
-.order-items-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    border: 2px solid #d8d4d4;
-    width: 75%;
-    padding: 1.5rem;
-    border-radius: 0.3rem;
-}
-
-.order-item{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    border-bottom:1px solid $li-active-color;
-}
-
-.order-item-left,
-.order-item-right{
+.order-delivery-details{
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    border: 1px solid red;
+    position: absolute;
+    background-color: var(--pure-white);
+    width: 100%;
+    left: -100%;
+
+    .delivery-details-form{
+        display: flex;
+        flex-direction: column;
+    }
 }
-
-.order-summery-item-name{
-    color: $li-active-color;
-}
-
-.order-summary-item-price,
-.order-summary-qty{
-    font-weight: bold;
-}
-
-.order-item-right{
-    align-items: center;
-    justify-content: right;
-}
-
-.total-value{
-    font-weight: bold;
-}
-
-.remove-item-summary,
-.continue-btn{
-    background-color: $li-active-color;
-    color: var(--pure-white);
-    font-weight: bold;
-    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-    border-radius: 1rem;
-    border: 2px solid var(--menu-filler-background);
-    transition: color 0.2s ease-in, backgroundColor 0.2s ease-in;
-
-}
-
-.continue-btn{
-    font-size: 1.75rem;
-    margin: 1rem;
-}
-
 
 // Delivery or takeaway
 
@@ -208,7 +222,6 @@ legend{
     border: 2px solid;
     border-radius: 0.2rem;
 }
-
 
 fieldset{
     display: flex;

@@ -22,14 +22,12 @@ const indexPage = (() => {
         if (window.innerWidth <= 1027) {
             imageSliderContainer.classList.remove('hidden');
             galleryContainer.classList.add('hidden');
-
         } else {
             imageSliderContainer.classList.add('hidden');
             galleryContainer.classList.remove('hidden');
         }
     })
     leftBtn.addEventListener('click', () => {
-
         translateValue += 100;
         if (translateValue >= 100) {
             translateValue = -800;

@@ -10,9 +10,9 @@ export default function calculateTotalBasketValue() {
                 total += (element.price * element.qty);
             }else{
                 total += element.price;
-            }
-        }
-    }
+            };
+        };
+    };
     totalValueBigCart.textContent = `$${total.toFixed(2)}`;
     totalValueSmallCart.textContent = `$${total.toFixed(2)}`;
 }
