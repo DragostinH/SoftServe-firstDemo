@@ -26,9 +26,6 @@ const createOrderSummary = (() => {
 
 })();
 
-
-
-
 function createOrderSummaryElement(qty, name, price, main) {
 
     const orderItemDiv = createDiv("order-item");

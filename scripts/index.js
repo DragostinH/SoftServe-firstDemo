@@ -26,7 +26,8 @@ const indexPage = (() => {
             imageSliderContainer.classList.add('hidden');
             galleryContainer.classList.remove('hidden');
         }
-    })
+    });
+
     leftBtn.addEventListener('click', () => {
         translateValue += 100;
         if (translateValue >= 100) {
@@ -37,6 +38,7 @@ const indexPage = (() => {
             e.style.transform = `translateX(${translateValue}%)`;
         });
     });
+
     rightBtn.addEventListener('click', () => {
         translateValue -= 100;
 
